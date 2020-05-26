@@ -64,16 +64,84 @@ header .logo {
           flex: 2 1 25rem;
 }
 
+header .logo .logo-circle {
+  overflow: hidden;
+  border-radius: 2.5rem;
+}
+
 header .logo .logo-circle .logo-circle-top {
   width: 5rem;
-  height: 5rem;
+  height: 2.5rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
   background: lightcoral;
+  position: relative;
+}
+
+header .logo .logo-circle .logo-circle-top::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  background: lightcoral;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(98%);
+          transform: translateY(98%);
+}
+
+header .logo .logo-circle .logo-circle-top::after {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  background: lightgoldenrodyellow;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 2.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  top: 0;
+  left: 5%;
+  -webkit-transform: translateY(96.85%);
+          transform: translateY(96.85%);
 }
 
 header .logo .logo-circle .logo-circle-bottom {
   width: 5rem;
-  height: 5rem;
+  height: 2.5rem;
   background: lightgoldenrodyellow;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  position: relative;
+}
+
+header .logo .logo-circle .logo-circle-bottom::before {
+  content: "";
+  position: absolute;
+  background: lightgoldenrodyellow;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-top-left-radius: 2.5rem;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+header .logo .logo-circle .logo-circle-bottom::after {
+  content: "";
+  position: absolute;
+  background: lightcoral;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 2.5rem;
+  border-bottom-left-radius: 0;
+  top: 0;
+  right: 5%;
+  -webkit-transform: translateY(-103%);
+          transform: translateY(-103%);
 }
 
 header .logo p {
