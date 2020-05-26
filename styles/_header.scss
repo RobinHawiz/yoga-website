@@ -19,32 +19,17 @@ header {
         border-top-right-radius: 2.5rem;
         background: lightcoral;
         position: relative;
-
-        &::before {
-          content: "";
-          z-index: 1;
-          position: absolute;
-          background: lightcoral;
-          height: 2.5rem;
-          width: 2.5rem;
-          border-bottom-right-radius: 2.5rem;
-          top: 0;
-          left: 0;
-          transform: translateY(98%);
-        }
         &::after {
           z-index: 2;
           content: "";
           position: absolute;
           background: lightgoldenrodyellow;
-          height: 2.5rem;
-          width: 2.5rem;
-          border-radius: 2.5rem;
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
+          height: 3.5rem;
+          width: 3.5rem;
+          border-radius: 3.5rem;
           top: 0;
-          left: 5%;
-          transform: translateY(96.85%);
+          left: -10%;
+          transform: translateY(55%);
         }
       }
       .logo-circle-bottom {
@@ -54,29 +39,16 @@ header {
         border-bottom-left-radius: 2.5rem;
         border-bottom-right-radius: 2.5rem;
         position: relative;
-
-        &::before {
-          content: "";
-          position: absolute;
-          background: lightgoldenrodyellow;
-          height: 2.5rem;
-          width: 2.5rem;
-          border-top-left-radius: 2.5rem;
-          top: 0;
-          right: 0;
-          transform: translateY(-100%);
-        }
         &::after {
           content: "";
           position: absolute;
           background: lightcoral;
-          height: 2.5rem;
-          width: 2.5rem;
-          border-radius: 2.5rem;
-          border-bottom-left-radius: 0;
+          height: 3.5rem;
+          width: 3.5rem;
+          border-radius: 3.5rem;
           top: 0;
-          right: 5%;
-          transform: translateY(-103%);
+          right: -11%;
+          transform: translateY(-85%);
         }
       }
     }
