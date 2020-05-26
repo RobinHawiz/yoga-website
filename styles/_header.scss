@@ -10,15 +10,46 @@ header {
     flex: 2 1 25rem;
 
     .logo-circle {
+      overflow: hidden;
+      border-radius: 2.5rem;
       .logo-circle-top {
         width: 5rem;
-        height: 5rem;
+        height: 2.5rem;
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
         background: lightcoral;
+        position: relative;
+        &::after {
+          z-index: 2;
+          content: "";
+          position: absolute;
+          background: lightgoldenrodyellow;
+          height: 3.5rem;
+          width: 3.5rem;
+          border-radius: 3.5rem;
+          top: 0;
+          left: -10%;
+          transform: translateY(55%);
+        }
       }
       .logo-circle-bottom {
         width: 5rem;
-        height: 5rem;
+        height: 2.5rem;
         background: lightgoldenrodyellow;
+        border-bottom-left-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background: lightcoral;
+          height: 3.5rem;
+          width: 3.5rem;
+          border-radius: 3.5rem;
+          top: 0;
+          right: -11%;
+          transform: translateY(-85%);
+        }
       }
     }
 
