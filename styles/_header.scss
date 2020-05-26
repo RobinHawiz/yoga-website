@@ -1,0 +1,37 @@
+header {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  @include flex(row, center, space-between);
+  flex-wrap: wrap;
+
+  .logo {
+    @include flex(row, center, none);
+    flex: 2 1 25rem;
+
+    .logo-circle {
+      .logo-circle-top {
+        width: 5rem;
+        height: 5rem;
+        background: lightcoral;
+      }
+      .logo-circle-bottom {
+        width: 5rem;
+        height: 5rem;
+        background: lightgoldenrodyellow;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      padding-left: 2rem;
+    }
+  }
+
+  nav {
+    flex: 1 1 20rem;
+    ul {
+      @include flex(row, center, space-between);
+    }
+  }
+}
